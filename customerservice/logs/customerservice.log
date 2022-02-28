@@ -1,0 +1,193 @@
+2022-02-28 10:25:32.906  INFO [cusotmerservice,,] 21334 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-02-28 10:25:35.083  INFO [cusotmerservice,,] 21334 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-02-28 10:25:35.084  WARN [cusotmerservice,,] 21334 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/cusotmerservice/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2022-02-28 10:25:35.104  INFO [cusotmerservice,,] 21334 --- [restartedMain] c.m.c.CustomerserviceApplication         : No active profile set, falling back to default profiles: default
+2022-02-28 10:25:43.696  INFO [cusotmerservice,,] 21334 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-28 10:25:44.877  INFO [cusotmerservice,,] 21334 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1134 ms. Found 2 JPA repository interfaces.
+2022-02-28 10:25:49.631  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=41e81289-385a-342e-a89b-e2e773f2b5e8
+2022-02-28 10:27:03.097  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8042 (http)
+2022-02-28 10:27:03.308  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-28 10:27:03.310  INFO [cusotmerservice,,] 21334 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 10:27:04.427  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-28 10:27:04.429  INFO [cusotmerservice,,] 21334 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 89079 ms
+2022-02-28 10:27:06.768  WARN [cusotmerservice,,] 21334 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2022-02-28 10:27:08.739  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-28 10:27:09.032  INFO [cusotmerservice,,] 21334 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-28 10:27:10.952  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-28 10:27:11.626  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-28 10:27:13.742  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-28 10:27:14.041  INFO [cusotmerservice,,] 21334 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-28 10:27:20.807  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-28 10:27:21.921  INFO [cusotmerservice,,] 21334 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 10:27:32.284  WARN [cusotmerservice,,] 21334 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-28 10:27:32.840  WARN [cusotmerservice,,] 21334 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-28 10:27:33.143  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ACCOUNTSERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-02-28 10:27:34.774  WARN [cusotmerservice,,] 21334 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-28 10:27:34.775  INFO [cusotmerservice,,] 21334 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-28 10:27:34.797  WARN [cusotmerservice,,] 21334 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-28 10:27:34.798  INFO [cusotmerservice,,] 21334 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-28 10:27:40.885  INFO [cusotmerservice,,] 21334 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-28 10:27:43.481  WARN [cusotmerservice,,] 21334 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-28 10:27:44.221  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-28 10:27:46.991  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-28 10:27:47.332  INFO [cusotmerservice,,] 21334 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-28 10:27:48.112  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-28 10:27:48.113  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-28 10:27:48.114  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-28 10:27:48.114  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-28 10:27:48.115  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-28 10:27:48.115  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-28 10:27:48.115  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-28 10:27:52.417  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-28 10:27:52.492  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-28 10:27:52.522  INFO [cusotmerservice,,] 21334 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-28 10:27:52.608  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1646024272574 with initial instances count: 2
+2022-02-28 10:27:52.713  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSOTMERSERVICE with eureka with status UP
+2022-02-28 10:27:52.716  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1646024272716, current=UP, previous=STARTING]
+2022-02-28 10:27:52.734  INFO [cusotmerservice,,] 21334 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSOTMERSERVICE/hnncentos-3.devops-mav.local:cusotmerservice:8042: registering service...
+2022-02-28 10:27:53.069  WARN [cusotmerservice,,] 21334 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8042 is already in use
+2022-02-28 10:27:53.572  WARN [cusotmerservice,,] 21334 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-28 10:27:53.573  INFO [cusotmerservice,,] 21334 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-28 10:27:53.607  INFO [cusotmerservice,,] 21334 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 10:27:53.688  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-28 10:27:53.803  INFO [cusotmerservice,,] 21334 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSOTMERSERVICE/hnncentos-3.devops-mav.local:cusotmerservice:8042 - registration status: 204
+2022-02-28 10:27:54.085  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-28 10:27:55.103  WARN [cusotmerservice,,] 21334 --- [restartedMain] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2022-02-28 10:27:55.109  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-02-28 10:27:58.121  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-02-28 10:27:58.238  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSOTMERSERVICE/hnncentos-3.devops-mav.local:cusotmerservice:8042 - deregister  status: 200
+2022-02-28 10:27:58.277  INFO [cusotmerservice,,] 21334 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-02-28 10:27:58.280  INFO [cusotmerservice,,] 21334 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-02-28 10:27:58.503  INFO [cusotmerservice,,] 21334 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 10:27:58.931 ERROR [cusotmerservice,,] 21334 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8042 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8042 or configure this application to listen on another port.
+
+2022-02-28 10:43:44.576  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-02-28 10:43:45.115  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-02-28 10:43:45.117  WARN [cusotmerservice,,] 24647 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/cusotmerservice/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2022-02-28 10:43:45.127  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.m.c.CustomerserviceApplication         : No active profile set, falling back to default profiles: default
+2022-02-28 10:43:52.639  INFO [cusotmerservice,,] 24647 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-28 10:43:53.571  INFO [cusotmerservice,,] 24647 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 891 ms. Found 2 JPA repository interfaces.
+2022-02-28 10:43:55.251  WARN [cusotmerservice,,] 24647 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-02-28 10:43:56.545  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=36cf66b2-31b4-391e-83b2-68a9006f03ad
+2022-02-28 10:44:05.143  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8042 (http)
+2022-02-28 10:44:05.207  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-28 10:44:05.208  INFO [cusotmerservice,,] 24647 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 10:44:05.934  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-28 10:44:05.935  INFO [cusotmerservice,,] 24647 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 20670 ms
+2022-02-28 10:44:07.243  WARN [cusotmerservice,,] 24647 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-28 10:44:07.244  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-28 10:44:07.336  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@491c8b2a
+2022-02-28 10:44:08.533  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/hystrix.stream' to hystrix.stream-actuator-endpoint
+2022-02-28 10:44:10.822  WARN [cusotmerservice,,] 24647 --- [restartedMain] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2022-02-28 10:44:16.555  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-28 10:44:16.941  INFO [cusotmerservice,,] 24647 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-28 10:44:18.136  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-28 10:44:18.719  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-28 10:44:19.905  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-28 10:44:19.963  INFO [cusotmerservice,,] 24647 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-28 10:44:25.925  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-28 10:44:25.978  INFO [cusotmerservice,,] 24647 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-28 10:44:29.791  WARN [cusotmerservice,,] 24647 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-28 10:44:30.432  WARN [cusotmerservice,,] 24647 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-28 10:44:30.740  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ACCOUNTSERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-02-28 10:44:32.009  WARN [cusotmerservice,,] 24647 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-02-28 10:44:32.011  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-28 10:44:39.008  INFO [cusotmerservice,,] 24647 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-28 10:44:40.230  WARN [cusotmerservice,,] 24647 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-28 10:44:40.625  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2022-02-28 10:44:40.942  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-28 10:44:41.812  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-28 10:44:41.845  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-28 10:44:41.961  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-28 10:44:41.962  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-28 10:44:41.962  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-28 10:44:41.963  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-28 10:44:41.963  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-28 10:44:41.964  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-28 10:44:41.966  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-28 10:44:43.162  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-28 10:44:43.173  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-28 10:44:43.185  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-28 10:44:43.203  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1646025283199 with initial instances count: 2
+2022-02-28 10:44:43.266  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSOTMERSERVICE with eureka with status UP
+2022-02-28 10:44:43.269  INFO [cusotmerservice,,] 24647 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1646025283269, current=UP, previous=STARTING]
+2022-02-28 10:44:43.281  INFO [cusotmerservice,,] 24647 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSOTMERSERVICE/hnncentos-3.devops-mav.local:cusotmerservice:8042: registering service...
+2022-02-28 10:44:43.361  INFO [cusotmerservice,,] 24647 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8042 (http) with context path ''
+2022-02-28 10:44:43.365  INFO [cusotmerservice,,] 24647 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8042
+2022-02-28 10:44:43.519  INFO [cusotmerservice,,] 24647 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSOTMERSERVICE/hnncentos-3.devops-mav.local:cusotmerservice:8042 - registration status: 204
+2022-02-28 10:44:43.585  INFO [cusotmerservice,,] 24647 --- [restartedMain] c.m.c.CustomerserviceApplication         : Started CustomerserviceApplication in 66.494 seconds (JVM running for 72.67)
+2022-02-28 10:46:55.955  INFO [cusotmerservice,8b91dfab273484b7,8b91dfab273484b7] 24647 --- [http-nio-8042-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-28 10:46:55.962  INFO [cusotmerservice,8b91dfab273484b7,8b91dfab273484b7] 24647 --- [http-nio-8042-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-28 10:46:55.971  INFO [cusotmerservice,8b91dfab273484b7,8b91dfab273484b7] 24647 --- [http-nio-8042-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-02-28 10:46:57.998  WARN [cusotmerservice,,] 24647 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2022-02-28 10:46:58.039  WARN [cusotmerservice,,] 24647 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:69) ~[spring-cloud-sleuth-zipkin-3.1.1.jar:3.1.1]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:660) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:51) ~[spring-cloud-sleuth-zipkin-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.lambda$new$0(RestTemplateSender.java:44) ~[spring-cloud-sleuth-zipkin-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender.post(HttpSender.java:137) ~[spring-cloud-sleuth-zipkin-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:150) ~[spring-cloud-sleuth-zipkin-3.1.1.jar:3.1.1]
+	at org.springframework.cloud.sleuth.zipkin2.HttpSender$HttpPostCall.doExecute(HttpSender.java:140) ~[spring-cloud-sleuth-zipkin-3.1.1.jar:3.1.1]
+	at zipkin2.Call$Base.execute(Call.java:391) ~[zipkin-2.23.2.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.16.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) ~[zipkin-reporter-2.16.3.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:609) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1253) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1015) ~[na:na]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.15.jar:5.3.15]
+	... 11 common frames omitted
+
+2022-02-28 10:49:03.900 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select customer0_.id as id1_1_, customer0_.addid as addid8_1_, customer0_.custage as custage2_1_, customer0_.custemail as custemai3_1_, customer0_.custmob as custmob4_1_, customer0_.custname as custname5_1_, customer0_.gender as gender6_1_, customer0_.isactive as isactive7_1_ from customerdetails customer0_
+2022-02-28 10:49:04.243 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:49:04.300 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:49:04.307 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:49:04.321 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:49:04.329 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:49:04.340 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:49:04.347 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:49:04.353 DEBUG [cusotmerservice,dad3c04219e61239,ca00a175799439b5] 24647 --- [http-nio-8042-exec-8] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:49:41.977  INFO [cusotmerservice,,] 24647 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-28 10:54:16.218 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select customer0_.id as id1_1_, customer0_.addid as addid8_1_, customer0_.custage as custage2_1_, customer0_.custemail as custemai3_1_, customer0_.custmob as custmob4_1_, customer0_.custname as custname5_1_, customer0_.gender as gender6_1_, customer0_.isactive as isactive7_1_ from customerdetails customer0_
+2022-02-28 10:54:16.269 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:54:16.282 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:54:16.294 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:54:16.304 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:54:16.315 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:54:16.320 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:54:16.326 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:54:16.333 DEBUG [cusotmerservice,a7e8aec98081b577,e46599c06167309c] 24647 --- [http-nio-8042-exec-10] org.hibernate.SQL                        : select address0_.id as id1_0_0_, address0_.city as city2_0_0_, address0_.country as country3_0_0_, address0_.pincode as pincode4_0_0_, address0_.street as street5_0_0_ from addressdetails address0_ where address0_.id=?
+2022-02-28 10:54:42.007  INFO [cusotmerservice,,] 24647 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
